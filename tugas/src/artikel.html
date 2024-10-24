@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page - Edit FAQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+ 
+    <!-- Tempat Header akan dimuat -->
+    <header class="bg-gradient-to-r from-purple-500 to-indigo-500 shadow-md p-4">
+      <nav class="flex justify-between items-center">
+          <div>
+              <h1 class="text-2xl font-bold text-white">Admin Dashboard</h1>
+          </div>
+          <div class="flex space-x-4">
+              <a href="editharga.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  Edit Harga
+              </a>
+              <a href="datapembelian.html" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                  Lihat Pembelian
+              </a>
+              <a href="artikel.html" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+                  Ubah Artikel
+              </a>
+              <a href="/src/index.html" class="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded">
+                  exit                </a>
+          </div>
+      </nav>
+  </header>
+  <!-- END NAVBAR -->
+
+  <!-- MAIN CONTENT -->
+  <section class="container mx-auto py-12">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-6">Edit FAQ Section</h2>
+
+    <form class="bg-white shadow-md rounded-lg p-8 space-y-6">
+      <!-- FAQ 1 -->
+      <div>
+        <label for="faq1-title" class="block text-lg font-medium text-gray-700">FAQ 1 - Judul</label>
+        <input
+          id="faq1-title"
+          name="faq1-title"
+          type="text"
+          class="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          value="Bagaimana cara membeli produk?"
+        />
+
+        <label for="faq1-content" class="block mt-4 text-lg font-medium text-gray-700">FAQ 1 - Konten</label>
+        <textarea
+          id="faq1-content"
+          name="faq1-content"
+          rows="4"
+          class="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        >Pilih produk yang tersedia di halaman web kami, lalu klik tombol beli, Anda akan diserahkan langsung menuju nomor WhatsApp admin kami.</textarea>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div>
+        <label for="faq2-title" class="block text-lg font-medium text-gray-700">FAQ 2 - Judul</label>
+        <input
+          id="faq2-title"
+          name="faq2-title"
+          type="text"
+          class="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          value="Bagaimana cara mendapat diskon?"
+        />
+
+        <label for="faq2-content" class="block mt-4 text-lg font-medium text-gray-700">FAQ 2 - Konten</label>
+        <textarea
+          id="faq2-content"
+          name="faq2-content"
+          rows="4"
+          class="mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        >List kode promo "OiStore" ketika belanja via chat WhatsApp!</textarea>
+      </div>
+
+      <!-- SUBMIT BUTTON -->
+      <div class="text-right">
+        <button
+          type="submit"
+          class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        >
+          Simpan Perubahan
+        </button>
+      </div>
+    </form>
+  </section>
+  <!-- END MAIN CONTENT -->
+
+</body>
+</html>

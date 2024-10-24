@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian Barang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Tempat Header akan dimuat -->
+    <header class="bg-gradient-to-r from-purple-500 to-indigo-500 shadow-md p-4">
+      <nav class="flex justify-between items-center">
+          <div>
+              <h1 class="text-2xl font-bold text-white">Admin Dashboard</h1>
+          </div>
+          <div class="flex space-x-4">
+              <a href="editharga.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  Edit Harga
+              </a>
+              <a href="datapembelian.html" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                  Lihat Pembelian
+              </a>
+              <a href="artikel.html" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+                  Ubah Artikel
+              </a>
+              <a href="/src/index.html" class="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded">
+                  exit                </a>
+          </div>
+      </nav>
+  </header>
+  
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">Daftar Produk</h1>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <table class="min-w-full table-auto">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="px-4 py-2 text-gray-600">No</th>
+                        <th class="px-4 py-2 text-gray-600">Gambar</th>
+                        <th class="px-4 py-2 text-gray-600">Nama Produk</th>
+                        <th class="px-4 py-2 text-gray-600">Harga</th>
+                        <th class="px-4 py-2 text-gray-600">Nama Pembeli</th>
+                        <th class="px-4 py-2 text-gray-600">Nomor Telepon</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white">
+                    <!-- Produk 1 -->
+                    <tr class="border-b">
+                        <td class="px-4 py-2 text-center">1</td>
+                        <td class="px-4 py-2">
+                            <img src="https://images.unsplash.com/photo-1679973957366-2f926a250629?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vintage Clock" class="h-16 w-16 object-cover rounded-md mx-auto">
+                        </td>
+                        <td class="px-4 py-2">Vintage Clock</td>
+                        <td class="px-4 py-2 text-green-600 font-semibold">Rp 1,500,000</td>
+                        <td class="px-4 py-2">Budi Santoso</td>
+                        <td class="px-4 py-2">+62 812 3456 7890</td>
+                    </tr>
+                    <!-- Produk 2 -->
+                    <tr class="border-b">
+                        <td class="px-4 py-2 text-center">2</td>
+                        <td class="px-4 py-2">
+                            <img src="https://images.unsplash.com/photo-1681301968103-f5f413c2bdd3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mesin ketik jadul 1911" class="h-16 w-16 object-cover rounded-md mx-auto">
+                        </td>
+                        <td class="px-4 py-2">Mesin ketik jadul 1911</td>
+                        <td class="px-4 py-2 text-green-600 font-semibold">Rp 13,500,000</td>
+                        <td class="px-4 py-2">Siti Aminah</td>
+                        <td class="px-4 py-2">+62 811 9876 5432</td>
+                    </tr>
+                    <!-- Produk 3 -->
+                    <tr class="border-b">
+                        <td class="px-4 py-2 text-center">3</td>
+                        <td class="px-4 py-2">
+                            <img src="https://images.unsplash.com/photo-1513806448456-9b25163a814f?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mesin kopi ekspeso" class="h-16 w-16 object-cover rounded-md mx-auto">
+                        </td>
+                        <td class="px-4 py-2">Mesin kopi ekspeso</td>
+                        <td class="px-4 py-2 text-green-600 font-semibold">Rp 20,500,000</td>
+                        <td class="px-4 py-2">Andi Pratama</td>
+                        <td class="px-4 py-2">+62 813 6547 2109</td>
+                    </tr>
+                    <!-- Tambah produk lainnya -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
